@@ -21,6 +21,9 @@ public class MainTesteSincronizacao {
         th1.start();
         th2.start();
         th3.start();
+        
+        th1.join();
+        th2.join();
         th3.join();
         
         System.out.println("valor atual do contador " + contador.getContador());

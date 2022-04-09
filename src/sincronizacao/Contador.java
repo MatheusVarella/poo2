@@ -15,7 +15,7 @@ public class Contador {
         this.contador--;
     }
     
-    public int getContador(){
+    public synchronized int getContador(){
         return this.contador; 
     }
 }
